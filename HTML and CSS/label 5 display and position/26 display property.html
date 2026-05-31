@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display property</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #box1{
+            background-color: red;
+        }
+        #box2{
+            background-color: rgb(170, 91, 91);
+        }
+        #box3{
+            background-color: rgb(116, 203, 127);
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            /* display: block; (ata block tag howoy auto vabe display block thakbe)*/
+            /* display: inline; ( inline element hole amra size define kore dite parbo na. contain er size onujayi auto size define hoye jabe)*/
+            /* display: inline-block; ( inline-blick dile amra jevabe size define kore dibo sevabey thakbe, sudhu contain inline type hoye jabe. and we should used it's element ) */
+            display: inline-block;
+        }
+        /* Display none: CSS er ai tag HTML visibility:hiden tag er moto. 
+        visibility hiden korle contain show korto na but jayga nito, 
+        but amra jody display: none; kori tahole o contain show korbe na but jayga o nibe na  */
+        #box2{
+            display: none;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- 3 type element
+        Block element
+        inline element
+        block inline element -->
+
+    <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+    <div id="box3" class="box">box3</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practices set level 5</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            background-color: darkgray;
+        }
+        nav a{
+            text-decoration: none;
+            margin-left: 35px;
+            font-size: 20px;
+            background-color: palegreen;
+
+        }
+        nav{
+            padding: 20px;
+            background-color: palegreen;
+            height: 60px;
+            box-sizing: border-box;
+        }
+        #secend{
+            height: 50px;
+            width: 50px;
+            border-radius: 20px;
+            background-color: red;
+        }
+        #box4{
+            position: fixed;
+            right: 10vw;
+            bottom: 50px;
+            background-color: green;
+            color: aliceblue;
+            height: 50px;
+            width: 50px;
+            border-radius: 15px;
+            border-color: red;
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 15px;
+        }
+        .box{
+            background-color: seagreen;
+            height: 50px;
+            width: 50px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            margin: 10px;
+            text-align: center;
+            padding-top: 15px;
+
+        }
+        #box1{
+            position: static;
+        }
+        #box2{
+            position: relative;
+            left: 15vw;
+            top: 15vw;
+        }
+        #box3{
+            position: absolute;
+            left: 60vw;
+            top: 120vw;
+        }
+        #box5{
+            top: 900px;
+            position: relative;
+
+        }
+        article{
+            margin-top: 920px;
+        }
+        h2{
+            background-color: blanchedalmond;
+            color: black;
+            font-size: 30px;
+        }
+        p{
+            background-color: beige;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+            <a href="#help">Help</a>
+        </nav>
+    </header>
+    <main>
+        <div class="box" id="secend"></div>
+        <div id="container">
+            <div class="box" id="box1">box1</div>
+            <div class="box" id="box2">box2</div>
+            <div class="box" id="box3">box3</div>
+            <div id="box5" class="box">box5</div>
+        </div>
+        <div class="box" id="box4">box4</div>
+        <article>
+            <div id="products">
+                <h2>Products</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maxime repudiandae itaque sequi quibusdam officiis natus, possimus rem, odio assumenda ad temporibus illo vero provident! Nisi exercitationem officia provident quos velit eveniet necessitatibus aperiam ut deleniti aliquid quam voluptatibus dicta quaerat qui possimus iste, voluptates, facilis sint ratione? Sit, impedit.</p>
+            </div>
+            <div id="contact">
+                <h2>Contact</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit aspernatur animi aliquid minima aperiam harum sequi unde hic, labore officiis perspiciatis inventore omnis, id iste ex ea impedit, odio nihil sunt! Quibusdam animi asperiores perferendis? Totam quisquam cupiditate fuga, eos doloribus et ipsa provident odio voluptate voluptates reprehenderit sapiente?</p>
+            </div>
+            <div id="help">
+                <h2>Help</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore animi quia temporibus ipsum quo ab blanditiis. Doloribus est veritatis eveniet laborum quos quibusdam cum! Repellat mollitia iure nulla veniam et deleniti asperiores libero atque numquam totam quaerat culpa dignissimos eaque, eum voluptate laudantium dicta, modi aperiam. Perferendis deserunt quia et.</p>
+            </div>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+</html>

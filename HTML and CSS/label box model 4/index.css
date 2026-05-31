@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#button{
+    background-color:aqua;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border: 5px solid red;
+    border-radius: 10px;
+    box-sizing:border-box;
+    /* border box option a gele amader box er moddhey sob kisu thakbe. jotoy style ar border add kori na kno. box size barbe na */
+    /* box-sizing: contain-box; 
+    ai tag dile joto border and padding satup korbo toto segula alada kore tader jayga nibe . er fole box boro hoyte thakbe */
+}
