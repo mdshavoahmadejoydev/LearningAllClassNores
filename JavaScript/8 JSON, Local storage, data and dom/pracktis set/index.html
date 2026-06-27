@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pracktice set</title>
+  <style>
+    #my-button {
+      height: 50px;
+      width: 50px;
+      font-size: 25px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .js-even {
+      background: red;
+    }
+
+    .js-odd {
+      background: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- task 1 = Display good morning, afternoon and night based on current hour -->
+  <!-- <h3 id="greeting"></h3> -->
+
+  <button id="my-button" onclick="buttonPressed()"></button>
+  <script>
+    // let date = new Date();
+    // let hours = date.getHours();
+    // //let hours = 7;
+    // let heading = document.querySelector('#greeting');
+
+
+    // if (hours >= 5 && hours <= 12) {
+    //     heading.innerText = 'Good morning';
+    // } else if (hours >= 14 && hours <= 17) {
+    //     heading.innerText = 'Good Afternoon';
+    // } else {
+    //     heading.innerText = 'Good Night'
+    // }
+
+
+
+
+    // task-2 = Add the name add the output too
+    // function doGreeting(personeName = 'Dear') {
+    //     let date = new Date();
+    //     let hours = date.getHours();
+    //     //let hours = 7;
+    //     let heading = document.querySelector('#greeting');
+
+
+    //     if (hours >= 5 && hours <= 12) {
+    //         heading.innerText = `Good morning ${personeName}`;
+    //     } else if (hours >= 14 && hours <= 17) {
+    //         heading.innerText = `Good Afternoon ${personeName}`;
+    //     } else {
+    //         heading.innerText = `Good Night ${personeName}`
+    //     }
+    // }
+
+    // console.log(doGreeting('joy'))
+
+
+
+
+    //Task-3 Create a Button  which shows the number how many times it has been pressed
+
+    let numberOfClicked = localStorage.getItem('numberOfClicked') || 0;
+
+    function buttonPressed() {
+      numberOfClicked++;
+      localStorage.setItem('numberOfClicked', numberOfClicked)
+      ubdateButton();
+    }
+
+    function ubdateButton() {
+      let button = document.querySelector('#my-button');
+      if (numberOfClicked % 2 === 0) {
+        button.classList.remove('js-odd');
+        button.classList.add('js-even');
+      } else {
+        button.classList.remove('js-even');
+        button.classList.add('js-odd');
+      }
+      button.innerText = numberOfClicked;
+    }
+    ubdateButton();
+
+  </script>
+  <h3></h3>
+</body>
+
+</html>

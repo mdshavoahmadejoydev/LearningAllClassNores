@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(140, 218, 52);
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.5s;
+}
+button:hover {
+    border: 2px solid red;
+}
+
+button:active {
+    background-color: rgb(46, 83, 4);
+}
+
+#reset {
+    background-color: rgb(70, 187, 207);
+}
+
+.img {
+    height: 80px;
+}
+.imge {
+    height: 40px;
+}
